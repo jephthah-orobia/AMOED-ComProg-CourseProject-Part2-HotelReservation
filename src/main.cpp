@@ -43,7 +43,7 @@ void display_slip(ostream &out, string name, int age, int n_guests, int n_days){
   double bal = balance(total);
   out << faded << "=======================================" << reset << endl
     << bold << fg::cyan << "\tHOTEL RESERVATION SLIP" << reset << endl
-    << "Consumer Name \t: " << bold << fg::green << name << reset << endl
+    << "Customer Name \t: " << bold << fg::green << name << reset << endl
     << "Age \t\t: " << bold << fg::green <<  age << reset << endl
     << "Number of Guests: " << bold << fg::green << n_guests << reset << endl
     << "Number of Days \t: " << bold << fg::green << n_days << reset << endl
@@ -57,7 +57,7 @@ void new_reservation(istream &in, ostream &out)
 {
   /* Get name */
   string name;
-  cout << endl << "Consumer Name: ";
+  cout << endl << "Customer Name: ";
   getline(cin, name);
   
   /* Get age */
