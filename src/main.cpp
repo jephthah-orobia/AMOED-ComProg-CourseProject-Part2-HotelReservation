@@ -7,9 +7,11 @@
 #include <cstdio>
 #include <cstdlib>
 #include <iostream>
-#include "_pause.h"
+#include "text_style.h"
+#include "validation.h"
 
 using namespace std;
+using namespace style;
 
 //////////////////////////////////////////////////////////////////
 //                               NOTE
@@ -25,11 +27,8 @@ int main()
   // Place your code logic after this comment line
   // ***********************************************************
 
-  cout << "Hello World!" << endl;
+  cout << underline << fg::magenta << bg::green << "Hello World!" << reset << endl;
 
-  // ********************** DO NOT CHANGE **********************
-  // Print a new line and ask user for any key before exiting
-  // ***********************************************************
-  _pause();
+  
   return EXIT_SUCCESS;
 }
