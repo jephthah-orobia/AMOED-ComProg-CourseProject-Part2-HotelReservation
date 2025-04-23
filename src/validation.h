@@ -4,6 +4,7 @@
 #include <iostream>
 #include <limits>
 #include <functional>
+#include "text_style.h"
 
 using namespace std;
 
@@ -20,7 +21,7 @@ namespace validation
             return n;
         else
         {
-            out << err_msg;
+            out << style::fg::red<< err_msg << style::reset;
             if (in.fail())
             {
                 in.clear();
