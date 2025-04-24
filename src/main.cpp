@@ -14,12 +14,7 @@
 using namespace std;
 using namespace style;
 
-const int RATES[5] = {
-    1000,
-    1800,
-    2700,
-    3600,
-    4500};
+const int RATES[5] = {1000, 1800, 2700, 3600, 4500};
 
 double total_payments(double ndays, int nguest)
 {
