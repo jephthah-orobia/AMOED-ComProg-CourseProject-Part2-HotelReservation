@@ -18,7 +18,7 @@ const int RATES[5] = {1000, 1800, 2700, 3600, 4500};
 
 double total_payments(double ndays, int nguest)
 {
-  if (nguest >= 5)
+  if (nguest > 5)
     nguest = 5;
   int rate = RATES[nguest - 1];
   return rate * ndays;
@@ -53,10 +53,10 @@ void display_slip(ostream &out, string name, int age, int n_guests, int n_days)
 
 void new_reservation(istream &in, ostream &out)
 {
+  cout << italic << fg::yellow << "***New Reservation***" << reset << endl;
   /* Get name */
   string name;
-  cout << endl
-       << "Customer Name: ";
+  cout << "Customer Name: ";
   getline(cin, name);
 
   /* Get age */
@@ -87,20 +87,17 @@ void new_reservation(istream &in, ostream &out)
       is_more_than_zero_double);
 
   display_slip(out, name, age, number_of_guest, number_of_days);
-  cout << endl
-       << endl;
 }
 
 void display_rates(ostream &out)
 {
-  out << endl
-      << inv << "Number of guests   | Daily Rate" << reset << endl;
+  cout << italic << fg::yellow << "***Reservation Rates***" << reset << endl;
+  out << inv << "Number of guests   | Daily Rate" << reset << endl;
 
   for (int i = 0; i < 5; i++)
   {
     if (i == 4)
-      cout << " 5 and above       | " << RATES[4] << endl
-           << endl;
+      cout << " 5 and above       | " << RATES[4] << endl;
     else
       out << " " << (i + 1) << "                 | " << RATES[i] << endl;
   }
@@ -123,15 +120,18 @@ int main()
 
   cin >> o;
   cin.ignore(numeric_limits<streamsize>::max(), '\n');
+  cout << endl;
   switch (o)
   {
   case 'N':
   case 'n':
     new_reservation(cin, cout);
+    cout << endl;
     break;
   case 'R':
   case 'r':
     display_rates(cout);
+    cout << endl;
     break;
   case 'C':
   case 'c':
