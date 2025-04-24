@@ -93,54 +93,48 @@ namespace style
         return os;
     }
 
-    namespace fg{
+    namespace fg
+    {
         ostream &black(ostream &os)
         {
             os << "\033[30m";
             return os;
-        
         }
 
         ostream &red(ostream &os)
         {
             os << "\033[31m";
             return os;
-        
         }
 
         ostream &green(ostream &os)
         {
             os << "\033[32m";
             return os;
-        
         }
 
         ostream &yellow(ostream &os)
         {
             os << "\033[33m";
             return os;
-        
         }
 
         ostream &blue(ostream &os)
         {
             os << "\033[34m";
             return os;
-        
         }
 
         ostream &magenta(ostream &os)
         {
             os << "\033[35m";
             return os;
-        
         }
 
         ostream &cyan(ostream &os)
         {
             os << "\033[36m";
             return os;
-        
         }
 
         ostream &white(ostream &os)
@@ -150,54 +144,48 @@ namespace style
         }
     }
 
-    namespace bg{
+    namespace bg
+    {
         ostream &black(ostream &os)
         {
             os << "\033[40m";
             return os;
-        
         }
 
         ostream &red(ostream &os)
         {
             os << "\033[41m";
             return os;
-        
         }
 
         ostream &green(ostream &os)
         {
             os << "\033[42m";
             return os;
-        
         }
 
         ostream &yellow(ostream &os)
         {
             os << "\033[43m";
             return os;
-        
         }
 
         ostream &blue(ostream &os)
         {
             os << "\033[44m";
             return os;
-        
         }
 
         ostream &magenta(ostream &os)
         {
             os << "\033[45m";
             return os;
-        
         }
 
         ostream &cyan(ostream &os)
         {
             os << "\033[46m";
             return os;
-        
         }
 
         ostream &white(ostream &os)

@@ -27,7 +27,7 @@ namespace validation
             return n;
         else
         {
-            out << style::fg::red<< err_msg << style::reset;
+            out << style::fg::red << err_msg << style::reset;
             if (in.fail())
             {
                 in.clear();
