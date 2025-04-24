@@ -1,3 +1,9 @@
+/* ****************************************************************
+ * @author: Jephthah M. Orobia
+ * @module name: validation
+ * @module desc: reusable and flexible functions that validates user input
+ * ****************************************************************/
+
 #ifndef VALIDATION
 #define VALIDATION
 

@@ -1,3 +1,9 @@
+/* ****************************************************************
+ * @author: Jephthah M. Orobia
+ * @module name: text_style
+ * @module desc: defined flags for output stream that styles the output text
+ * ****************************************************************/
+
 #ifndef TEXT_STYLE
 #define TEXT_STYLE
 
