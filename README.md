@@ -22,7 +22,7 @@ Number of guests	| Daily Rate
 2	| 1,800
 3	| 2,700
 4	| 3,600
-5 | (and above)	4,500
+5 (and above)	| 4,500
 
 
 Compute the total payment as follows:
@@ -30,3 +30,24 @@ Compute the total payment as follows:
 >	Total Payment = rate per day * no. of days \
 >	Down payment = 40% of the total payment \
 >	Balance = total payment – down payment
+
+Assume that the user will not enter an invalid value.
+Sample Input:
+```
+	Customer Name: Juan Dela Cruz
+	Age: 25
+	Number of guests: 3
+	Number of days: 5
+```
+--------------------------------------------------------------------------------------------
+```
+Sample Output:
+			Hotel Reservation Slip
+	Customer Name	: Juan Dela Cruz
+	Age				: 25
+	Number of guests: 3	
+	Number of days	: 5
+	Total Payment	: 13500
+	Down Payment	: 5400
+	Balance			: 8100
+```
