@@ -26,7 +26,12 @@ namespace validation
      *  - `is_valid`: a function to check if the captured value is valid.
      */
     template <typename T>
-    T getValidInput(istream &in, ostream &out, string prompt, string err_msg, function<bool(T)> is_valid)
+    T getValidInput(
+        istream &in,
+        ostream &out,
+        string prompt,
+        string err_msg,
+        function<bool(T)> is_valid)
     {
         int n;
         out << prompt;
