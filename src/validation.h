@@ -42,7 +42,7 @@ namespace validation
                 in.clear();
                 in.ignore(numeric_limits<streamsize>::max(), '\n');
             }
-            return getValidInput(in, out, prompt, err_msg, isValid);
+            return getValidInput(in, out, prompt, err_msg, is_valid);
         }
     }
 }
